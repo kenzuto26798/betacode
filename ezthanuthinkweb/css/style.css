@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;700&display=swap');
+body
+{
+    font-family: 'Mitr', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid ;
+    padding: 10px;
+}
+.logo {
+    padding: 0.5rem 1rem;
+}
+
+header {
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px ;
+    background-color: rgb(161, 172, 182);
+}
+
+.header-info {
+    text-align: center;
+    color:#3a3b42;
+    width: 870px;
+    height: 300px;
+    border: 1px ;
+    
+}
+
+.header-info h1 {
+    font-size: 52px;
+
+ 
+}
+.header-info a {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    width: 400px;
+    padding: 20px 50px;
+    background-color: rgb(62, 57, 77);
+    color:white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+.header-btn {
+    background-color: rgb(62, 57, 77);
+    position: relative;
+    transition: all 0.25s ease;
+}
+.header-btn:hover{
+    transform:translate(0px,-6px);
+}
+.header-btn:hover::before{
+    transform:translate(0px,4px);
+}
+.header-btn:hover::after{
+    transform:translate(0px,0px);
+}
+.header-btn::after,.header-btn::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background-color:  rgb(56, 60, 99);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25 ease;
+
+}
+
+
+
